@@ -34,7 +34,6 @@ julia> using NPZ;
 
 julia> I = npzread("I.npy");
 
-
 julia> J = npzread("J.npy");
 
 julia> V = npzread("V.npy");
@@ -56,9 +55,9 @@ julia> varinfo()
   V                 95.826 MiB 100480507-element Array{UInt8,1}          
 ```
 
-## Preprocessing the raw data
+## Reproducing the data
+To reproduce the data, follow the two steps below.
 
-To reproduce the data, follow this description.
 1) Download the raw data from this [archive](https://archive.org/download/nf_prize_dataset.tar) and place the extracted files in this folder.
 
 2) Execute all cells in the `InitialPreProcessing.ipynb`. This might take up to 20 minutes.
