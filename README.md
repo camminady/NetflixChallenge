@@ -1,7 +1,7 @@
 # Netflix Challenge
 
 ## TLDR: Downloading the final data
-The `*.npy` files (which are described in this README below) can be downloaded [here](https://nextcloud.scc.kit.edu/s/kqD4r65irGBLYNK)
+The `*.npy` files (which are described in this README below) can be downloaded [here](https://nextcloud.scc.kit.edu/s/kqD4r65irGBLYNK).
 
 
 ## Postprocessed data description
