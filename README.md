@@ -27,3 +27,8 @@ In step 2), several `.npy` files are being created. They store (in numpy format)
 
 There are 100480507 total ratings for 17770 movies.
 
+
+## Reading the data 
+
+With Python, the data can be read using numpy as `X = numpy.load('x.npy',allow_pickle=True)`. This is also possible in Julia using [NPZ](https://github.com/fhs/NPZ.jl).
+
