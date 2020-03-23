@@ -9,7 +9,7 @@ The `*.npy` files (which are described in this README below) can be downloaded [
 Since the data is sparse, we store it that way. Think of the matrix `S` with entries `S[i,j] = v`, interpreted as movie `i` was ranked by user `j` with `v` stars. 
 Additionally to `v`, we also store `y`, `m`, and `d` which represent the year, month, and day on which the rating was given.
 
-In step 2), several `.npy` files are being created. They store (in numpy format) the following data:
+Several `.npy` files are being created (as described in the last section). They store (in numpy format) the following data:
 
 | File name     | Description           | Data type     | Array length |
 | ------------- | -------------         | ------------- | -------------|
