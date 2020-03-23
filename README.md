@@ -30,5 +30,32 @@ There are 100480507 total ratings for 17770 movies.
 
 ## Reading the data 
 
-With Python, the data can be read using numpy as `X = numpy.load('x.npy',allow_pickle=True)`. This is also possible in Julia using [NPZ](https://github.com/fhs/NPZ.jl).
+With Python, the data can be read using numpy as `X = numpy.load('x.npy',allow_pickle=True)`. This is also possible in Julia using [NPZ](https://github.com/fhs/NPZ.jl) and would look like this:
 
+```
+
+julia> using NPZ;
+
+julia> I = npzread("I.npy");
+
+
+julia> J = npzread("J.npy");
+
+julia> V = npzread("V.npy");
+
+julia> using SparseArrays
+
+julia> A = sparse(I,J,V);
+
+julia> varinfo()
+  name                    size summary                                   
+  –––––––––––––––– ––––––––––– ––––––––––––––––––––––––––––––––––––––––––
+  A                882.645 MiB 17770×2649429 SparseMatrixCSC{UInt8,Int64}
+  Base                         Module                                    
+  Core                         Module                                    
+  I                191.651 MiB 100480507-element Array{UInt16,1}         
+  InteractiveUtils 162.212 KiB Module                                    
+  J                383.303 MiB 100480507-element Array{UInt32,1}         
+  Main                         Module                                    
+  V                 95.826 MiB 100480507-element Array{UInt8,1}          
+```
