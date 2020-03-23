@@ -1,13 +1,10 @@
 # Netflix Challenge
 
+## TLDR: Downloading the final data
+The `*.npy` files (which are described in this README below) can be downloaded [here](https://nextcloud.scc.kit.edu/s/kqD4r65irGBLYNK)
 
-## Preprocessing the raw data
 
-1) Download the raw data from this [archive](https://archive.org/download/nf_prize_dataset.tar) and place the extracted files in this folder.
-
-2) Execute all cells in the `InitialPreProcessing.ipynb`. This might take up to 20 minutes.
-
-## Postprocessed data
+## Postprocessed data description
 
 Since the data is sparse, we store it that way. Think of the matrix `S` with entries `S[i,j] = v`, interpreted as movie `i` was ranked by user `j` with `v` stars. 
 Additionally to `v`, we also store `y`, `m`, and `d` which represent the year, month, and day on which the rating was given.
@@ -26,7 +23,6 @@ In step 2), several `.npy` files are being created. They store (in numpy format)
 | `T.npy`       | Title of movie        | `str`         | 17770        |
 
 There are 100480507 total ratings for 17770 movies.
-
 
 ## Reading the data 
 
@@ -59,3 +55,11 @@ julia> varinfo()
   Main                         Module                                    
   V                 95.826 MiB 100480507-element Array{UInt8,1}          
 ```
+
+## Preprocessing the raw data
+
+To reproduce the data, follow this description.
+1) Download the raw data from this [archive](https://archive.org/download/nf_prize_dataset.tar) and place the extracted files in this folder.
+
+2) Execute all cells in the `InitialPreProcessing.ipynb`. This might take up to 20 minutes.
+
