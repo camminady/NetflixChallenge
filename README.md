@@ -22,7 +22,7 @@ In step 2), several `.npy` files are being created. They store (in numpy format)
 | `R.npy`       | Release year of movie | `np.uint16`   | 17770        |
 | `T.npy`       | Title of movie        | `str`         | 17770        |
 
-There are 100480507 total ratings for 17770 movies.
+There are 100480507 total ratings for 17770 movies and 2649429 users.
 
 ## Reading the data 
 
